@@ -183,7 +183,7 @@ for finsh the only what we need to do is implement the quest on the scene
    # Todo 5 [Quest1.cpp]
  -Make the Quest
  
-  # Todo 5 [Scene.cpp]
+  # Todo 6 [Scene.cpp]
  -Initialize the Quest
  
  -Put it on scene
