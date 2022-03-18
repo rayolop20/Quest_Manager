@@ -1,5 +1,6 @@
 #include "Quest_Manager.h"
 #include "App.h"
+#include "Player.h"
 #include "Quest1.h"
 #include "Defs.h"
 #include "Log.h"
@@ -147,16 +148,6 @@ bool QuestManager::SaveState(pugi::xml_node& data)
 	return ret;
 }
 
-void QuestManager::OnCollision(Collider* c1, Collider* c2)
-{
-	if (c1 == collider)
-	{
-		if (c1->type == Collider::Type::QUEST1 && c2->type == Collider::Type::PLAYER) {
-			int a = 0;
-		}
-	}
-}
-
 bool QuestManager::Draw() {
 
 	bool ret = true;
@@ -173,4 +164,25 @@ bool QuestManager::Draw() {
 
 	return ret;
 
+}
+
+void QuestManager::OnCollision(Collider* c1, Collider* c2)
+{
+	if (c1 == collider_M1)
+	{
+		if (c1->type == Collider::Type::QUEST1 && c2->type == Collider::Type::PLAYER) {
+			ques1 = true;
+		}
+		
+	}
+	if (c1 == collider_M1_2)
+	{
+		if (c1->type == Collider::Type::QUEST1_2 && c2->type == Collider::Type::PLAYER && ques1 == true) {
+			ques1 = false;
+
+			app->player->Z.position.x = 0;
+			app->player->Z.position.y = 0;
+
+		}
+	}
 }

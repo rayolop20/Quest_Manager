@@ -57,11 +57,14 @@ public:
 	PathFinding* path;
 	Render* render;
 
-	Collider* collider = nullptr;
+	Collider* collider_M1 = nullptr;
+	Collider* collider_M1_2 = nullptr;
+
 
 	float accumulatedTime = 0.0f;
 	float updateMsCycle = 0.0f;
 	bool doLogic = false;
+	bool ques1 = false;
 };
 
 #endif // __QUESTMANAGER_H__
