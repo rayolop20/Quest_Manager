@@ -56,6 +56,8 @@ Quest* QuestManager::CreateQuest(QuestType type, int id, SDL_Rect bounds)
 		break;
 	}
 
+	quests->Start();
+
 	if (quests != nullptr) questss.Add(quests);
 
 	return quests;

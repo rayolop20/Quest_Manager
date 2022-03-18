@@ -125,7 +125,7 @@ void Player::OnCollision(Collider* c1, Collider* c2)
 	if (c1 == Z.Pcol)
 	{
 		if (c1->type == Collider::Type::PLAYER && c2->type == Collider::Type::QUEST1) {
-			Z.position.x + 100;
+			Z.position.x += 100;
 		}
 	}
 	
