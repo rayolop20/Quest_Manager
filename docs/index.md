@@ -143,3 +143,18 @@ In the mission module, we are going to initialize the collisions in the Start an
 
 	app->questManager->collider_M1->SetPos(200, 200);
  ```
+
+for finsh the only what we need to do is implement the quest on the scene
+
+```#C
+	//(.h)
+	QuestType* quest1;
+	//Start (.cpp) 
+	Quest1* quest1 = (Quest1*)app->questManager->CreateQuest(QuestType::QUEST1, 0, { 0, 0 });
+
+ ```
+## TODOS
+
+# Todo 1
+
+ 
