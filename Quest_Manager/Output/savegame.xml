@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<save_state>
+	<window />
+	<input />
+	<scene />
+	<map />
+	<:anonymous />
+	<questmanager />
+	<player />
+	<renderer>
+		<camera x="0" y="0" />
+	</renderer>
+</save_state>
