@@ -10,6 +10,10 @@ The quests are activities/objectives/actions that the player has to do either al
 * Combo Quest: these quests are characterized by the fact that you have to press certain keys in a certain order and time (making a combo), The Quick time events could be classified as combo quests, because if you fail, you can lose. 
 * Mixed Quest: These are quests that have one or more types of missions already mentioned above.
 
+```#C
+     for (i = 0; i < 10; i++)
+```
+
 ![Different Quests Types](https://github.com/rayolop20/Quest_Manager/blob/main/Page_images/Quest_images.png)
 
 The missions, at the same time, can be of different types:
