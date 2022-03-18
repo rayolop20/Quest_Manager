@@ -40,7 +40,7 @@ public:
 	bool PostUpdate();
 
 	// Collision callback, called when the player intersects with another collider
-	void OnCollision(Collider* c1, Collider* c2);
+
 
 	//int Timer(int second);
 

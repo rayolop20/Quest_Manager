@@ -147,6 +147,11 @@ bool QuestManager::SaveState(pugi::xml_node& data)
 	return ret;
 }
 
+void QuestManager::OnCollision(Collider* c1, Collider* c2)
+{
+	int a = 0;
+}
+
 bool QuestManager::Draw() {
 
 	bool ret = true;

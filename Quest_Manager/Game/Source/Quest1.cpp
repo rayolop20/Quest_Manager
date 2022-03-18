@@ -2,6 +2,7 @@
 #include "App.h"
 #include "Quest1.h"
 #include "Collisions.h"
+#include "Quest_Manager.h"
 
 Quest1::Quest1() :Quest(QuestType::QUEST1)
 {
@@ -20,7 +21,7 @@ bool Quest1::Awake(pugi::xml_node&)
 
 bool Quest1::Start()
 {
-	collider = app->collisions->AddCollider({ 200, 200, 50, 50 }, Collider::Type::QUEST1, (Module*)app->questManager);
+	app->questManager->collider = app->collisions->AddCollider({ 200, 200, 50, 50 }, Collider::Type::QUEST1, (Module*)app->questManager);
 
 	return false;
 }

@@ -44,6 +44,7 @@ public:
 
 	bool SaveState(pugi::xml_node& data);
 
+	void OnCollision(Collider* c1, Collider* c2);
 public:
 
 	List<Quest*> questss;
@@ -55,6 +56,8 @@ public:
 	Collisions* collisions;
 	PathFinding* path;
 	Render* render;
+
+	Collider* collider = nullptr;
 
 	float accumulatedTime = 0.0f;
 	float updateMsCycle = 0.0f;
