@@ -31,7 +31,7 @@ public:
 	// Called at the end of the application loop
 	// Performs the render call of the player sprite
 
-	Collider* collider = nullptr;
+
 public:
 
 };

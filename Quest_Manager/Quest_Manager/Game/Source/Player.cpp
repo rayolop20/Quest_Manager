@@ -118,16 +118,3 @@ bool Player::PostUpdate()
 	return true;
 }
 
-
-void Player::OnCollision(Collider* c1, Collider* c2)
-{
-	// L6: DONE 5: Detect collision with a wall. If so, destroy the player.
-	if (c1 == Z.Pcol)
-	{
-		if (c1->type == Collider::Type::PLAYER && c2->type == Collider::Type::QUEST1) {
-			Z.position.x += 100;
-		}
-	}
-	
-}
-

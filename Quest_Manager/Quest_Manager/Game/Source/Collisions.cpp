@@ -13,10 +13,16 @@ Collisions::Collisions() : Module()
 		colliders[i] = nullptr;
 
 	matrix[Collider::Type::QUEST1][Collider::Type::QUEST1] = false;
+	matrix[Collider::Type::QUEST1][Collider::Type::QUEST1_2] = false;
 	matrix[Collider::Type::QUEST1][Collider::Type::PLAYER] = true;
+	
+	matrix[Collider::Type::QUEST1_2][Collider::Type::QUEST1] = false;
+	matrix[Collider::Type::QUEST1_2][Collider::Type::QUEST1_2] = false;
+	matrix[Collider::Type::QUEST1_2][Collider::Type::PLAYER] = true;
 
 	matrix[Collider::Type::PLAYER][Collider::Type::PLAYER] = false;
-	matrix[Collider::Type::PLAYER][Collider::Type::QUEST1] = false;
+	matrix[Collider::Type::PLAYER][Collider::Type::QUEST1] = true;
+	matrix[Collider::Type::PLAYER][Collider::Type::QUEST1_2] = true;
 
 
 }
@@ -103,6 +109,9 @@ void Collisions::DebugDraw()
 			app->render->DrawRectangle(colliders[i]->rect, 255, 255, 255, alpha);
 			break;
 		case Collider::Type::QUEST1: // blue
+			app->render->DrawRectangle(colliders[i]->rect, 0, 0, 255, alpha);
+			break;
+		case Collider::Type::QUEST1_2: // blue
 			app->render->DrawRectangle(colliders[i]->rect, 0, 0, 255, alpha);
 			break;
 		case Collider::Type::PLAYER: // green

@@ -14,6 +14,7 @@ struct Collider
 		NONE = -1,
 		PLAYER,
 		QUEST1,
+		QUEST1_2,
 		MAX
 
 	};
