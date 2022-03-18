@@ -12,10 +12,12 @@ The quests are activities/objectives/actions that the player has to do either al
 
 ![Different Quests Types](https://github.com/rayolop20/Quest_Manager/blob/main/Page_images/Quest_images.png)
 
-the missions, at the same time, can be of different types:
+The missions, at the same time, can be of different types:
 * Main Quest: these Quests are necessary to continue in history and are obligatory.
 * Secondary Quest: They are optional Quest, they come out as you complete the main Quest, they are not necessary to continue with the story nor are they obligatory.
 * Chained Quest: They are Quest linked to the Quests, that is, once you complete one, they will instantly give you the next one, you will not have to go look for it.
 * Events Quest: These are Quest that are active for a limited time, they can be daily, weekly, monthly or specific events for a special occasion.
 
 ![Different Quests](https://github.com/rayolop20/Quest_Manager/blob/main/Page_images/Quest_types.png)
+
+#Code
