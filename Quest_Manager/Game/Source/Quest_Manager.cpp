@@ -149,7 +149,12 @@ bool QuestManager::SaveState(pugi::xml_node& data)
 
 void QuestManager::OnCollision(Collider* c1, Collider* c2)
 {
-	int a = 0;
+	if (c1 == collider)
+	{
+		if (c1->type == Collider::Type::QUEST1 && c2->type == Collider::Type::PLAYER) {
+			int a = 0;
+		}
+	}
 }
 
 bool QuestManager::Draw() {
