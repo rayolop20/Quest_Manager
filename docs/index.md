@@ -156,5 +156,34 @@ for finsh the only what we need to do is implement the quest on the scene
 ## TODOS
 
 # Todo 1
-
+* [Quest_Manager.cpp] Add the Quest on List
  
+ -Call the constructor Called QuestType
+ 
+ 
+ # Todo 2
+* [Collisions.cpp, Collider.h ] Create The colliders
+ 
+ -Create the colliders on struct
+ 
+ -Make The matrix (use the player for reference)
+ 
+ -Draw the colider
+ 
+  # Todo 3
+* [Quest_Manager.cpp, Quest_Manager.h ] Make the colision system
+ 
+ -Player Hits with the colider, what wappend?
+ 
+ -We need some elements
+ 
+   # Todo 4 [Quest1.cpp]
+ -add the coliders
+ 
+   # Todo 5 [Quest1.cpp]
+ -Make the Quest
+ 
+  # Todo 5 [Scene.cpp]
+ -Initialize the Quest
+ 
+ -Put it on scene
