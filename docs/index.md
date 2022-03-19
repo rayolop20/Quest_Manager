@@ -156,7 +156,7 @@ for finsh the only what we need to do is implement the quest on the scene
 ## TODOS
 
 * DOWNLOAD HANDOUT HERE:
-* 
+* https://drive.google.com/drive/folders/1J4AwV-EyjnmkMZGU4G89kenj37R7VUBI?usp=sharing
 
 # Todo 1
 * [Quest_Manager.cpp] Add the Quest on List
